@@ -1,8 +1,9 @@
 {
   "name": "character-map",
   "version": "1.0.0",
-  "description": "A simple command line tool for dumping a UTF-8 string of characters supported by your font",
+  "description": "A simple command line tool for dumping a UTF-8 string of characters supported by a font file",
   "main": "index.js",
+  "bin": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "test-run": "fontmin -t `node index.js -f test.ttf` other.ttf > subset.ttf"
