@@ -1,0 +1,23 @@
+{
+  "name": "character-map",
+  "version": "1.0.0",
+  "description": "A simple command line tool for dumping a UTF-8 string of characters supported by your font",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitinn/character-map.git"
+  },
+  "keywords": [
+    "character",
+    "font"
+  ],
+  "author": "David Frank",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bitinn/character-map/issues"
+  },
+  "homepage": "https://github.com/bitinn/character-map#readme"
+}
