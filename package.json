@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/bitinn/character-map/issues"
   },
-  "homepage": "https://github.com/bitinn/character-map#readme"
+  "homepage": "https://github.com/bitinn/character-map#readme",
+  "dependencies": {
+    "minimist": "^1.1.1",
+    "opentype.js": "^0.4.7"
+  }
 }
