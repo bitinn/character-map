@@ -1,6 +1,6 @@
 {
   "name": "character-map",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple command line tool for dumping a UTF-8 string of characters supported by a font file",
   "main": "index.js",
   "bin": "index.js",
