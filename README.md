@@ -4,7 +4,7 @@ character-map
 
 [![npm version][npm-image]][npm-url]
 
-A simple command line tool for dumping a UTF-8 string of characters supported by your selected font
+A simple command line tool for dumping a UTF-8 string of characters supported by your font.
 
 
 # Motivation
@@ -40,6 +40,12 @@ $ character-map -f my.woff > my.txt
 # License
 
 MIT
+
+
+# Acknowledgement
+
+Inspired by [CharacterMap](https://github.com/bluejamesbond/CharacterMap) and uses [opentype.js](https://github.com/nodebox/opentype.js).
+
 
 [npm-image]: https://img.shields.io/npm/v/character-map.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/character-map
