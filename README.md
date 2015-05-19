@@ -30,11 +30,21 @@ But I wonder what characters they pick for their subsets?
 `npm install character-map -g`
 
 
-# Usgae
+# Usage
+
+TrueType and OpenType files are supported at the moment
 
 ```
-$ character-map -f my.woff > my.txt
+$ character-map -f my.ttf > map.txt
 ```
+
+`map.txt` will contain a list of characters found in the font. Now you can use this result with a subsetting tool like [fontmin](https://github.com/ecomfe/fontmin).
+
+```
+$ fontmin -t `cat map.txt` other.ttf > subset.ttf
+```
+
+Of course you can verify the result with `character-map` again.
 
 
 # License

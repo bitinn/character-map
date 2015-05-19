@@ -4,7 +4,8 @@
   "description": "A simple command line tool for dumping a UTF-8 string of characters supported by your font",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test-run": "fontmin -t `node index.js -f test.ttf` other.ttf > subset.ttf"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,8 @@
   "dependencies": {
     "minimist": "^1.1.1",
     "opentype.js": "^0.4.7"
+  },
+  "devDependencies": {
+    "fontmin": "^0.9.0-alpha-1"
   }
 }
