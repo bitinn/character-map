@@ -27,14 +27,12 @@ opentype.load(opts.f, function(err, font) {
 	}
 
 	var table = '';
-	Object.keys(glyphs).forEach(function(key) {
-		var glyph = glyphs[key];
-		if (!glyph.unicode) {
-			return;
+	for(glyphIndex in glyphs) {
+		var glyph = glyphs[glyphIndex];
+		if (glyph.unicode) {
+			table += String.fromCharCode(glyph.unicode);
 		}
-		
-		table += String.fromCharCode(glyph.unicode);
-	});
+	}
 
 	console.log(table);
 });
