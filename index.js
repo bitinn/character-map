@@ -27,7 +27,7 @@ opentype.load(opts.f, function(err, font) {
 	}
 
 	var table = '';
-	for(glyphIndex in glyphs) {
+	for (glyphIndex in glyphs) {
 		var glyph = glyphs[glyphIndex];
 		if (glyph.unicode) {
 			table += String.fromCharCode(glyph.unicode);

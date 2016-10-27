@@ -32,7 +32,7 @@ But I wonder what characters they pick for their CJK subsets?
 
 # Usage
 
-TrueType and OpenType files are supported at the moment.
+TrueType, OpenType, WOFF v1 files are supported at the moment.
 
 ```
 $ character-map -f my.ttf > map.txt

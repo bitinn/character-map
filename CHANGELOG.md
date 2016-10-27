@@ -5,11 +5,17 @@ Changelog
 
 # 1.x release
 
-## v1.0.1 (master)
+## v1.1.0
 
-- Enhance: doc
-- Fix: define command in package.json
+- Enhance: Dependency update
+- Enhance: WOFF font support
+- Fix: Support newer version of opentype
+
+## v1.0.1
+
+- Fix: Documentation
+- Fix: Define command in package.json
 
 ## v1.0.0
 
-- Major: initial public release
+- Major: Initial public release
