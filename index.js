@@ -20,19 +20,19 @@ opentype.load(opts.f, function(err, font) {
 		return;
 	}
 
-	if (!font.glyphs || font.glyphs.length === 0) {
+	var glyphs = font.glyphs.glyphs;
+	if (!glyphs || glyphs.length === 0) {
 		console.log('no glyphs found in this font');
 		return;
 	}
 
 	var table = '';
-	font.glyphs.forEach(function(glyph) {
-		if (!glyph.unicode) {
-			return;
+	for(glyphIndex in glyphs) {
+		var glyph = glyphs[glyphIndex];
+		if (glyph.unicode) {
+			table += String.fromCharCode(glyph.unicode);
 		}
-
-		table += String.fromCharCode(glyph.unicode);
-	});
+	}
 
 	console.log(table);
 });
